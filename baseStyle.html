@@ -1,0 +1,63 @@
+<style>
+#workspace #script
+{    
+color: #222;
+cursor: text;
+letter-spacing: 0 !important;
+font-family: "Courier Final Draft", "Courier New", Courier, Courier New, monospace;
+line-height: 107.5%;
+margin-bottom: 25px;
+position: relative;
+text-align: left;
+width: 100%;
+z-index: 200;
+font-size: 12pt;
+}
+
+/* title page */
+#workspace #script .title-page h1 { margin-top: 200px; margin-bottom: 200px; text-align: center; width: 90.5%; line-height: 120%}
+#workspace #script .title-page p.credit { text-align: center; width: 90.5%; }
+#workspace #script .title-page p.author,
+#workspace #script .title-page p.authors { margin-bottom: 32px; margin-top: 0; text-align: center; width: 90.5%; }
+#workspace #script .title-page p.source { margin-bottom: 32px; text-align: center; width: 90.5%; }
+#workspace #script .title-page p.notes { /*bottom: 350px; position: absolute; right: 0;*/ text-align: right; }
+#workspace #script .title-page p.date,
+#workspace #script .title-page p.draft-date { /*bottom: 250px; position: absolute; right: 0;*/ text-align: right; }
+#workspace #script .title-page p.contact { /*bottom: 100px; position: absolute; right: 0; */ text-align: right; }
+#workspace #script .title-page p.copyright { /*bottom: 100px; position: absolute; */ text-align: left; }
+
+
+/* normalize elements */
+h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* script */
+#workspace #script .page h2 { text-align: right; }  /* Used for transition */
+#workspace #script .page h2.left-aligned { text-align: left }
+#workspace #script .page h3 { position: relative; }
+/*#workspace #script .page h3:before { color: #bbb; content: attr(id); font-weight: bold; left: -45px; position: absolute; }*/
+/*#workspace #script .page h3:after { color: #bbb; content: attr(id); font-weight: bold; right: -45px; position: absolute; }*/
+
+#workspace #script .page div.dialogue { margin-left: auto; margin-right: auto; width: 68%; }
+#workspace #script .page div.dialogue h4 { margin-bottom: 0; margin-left: 23%; }
+#workspace #script .page div.dialogue p.parenthetical { margin-bottom: 0; margin-top: 0; margin-left: 11%;}
+#workspace #script .page div.dialogue p { margin-bottom: 0; margin-top: 0; }
+
+#workspace #script .page div.dual-dialogue { margin: 2em 0 0.9em 2%; auto; width: 95%; }
+#workspace #script .page div.dual-dialogue div.dialogue { display: inline-block; margin: 0; width: 45%; }
+#workspace #script .page div.dual-dialogue div.dialogue h4 { margin-top: 0;}
+#workspace #script .page div.dual-dialogue div.dialogue.right { float: right; }
+
+#workspace #script .page p { }
+#workspace #script .page p.centered { text-align: center; width: 92.5%; }
+
+#workspace #script .page p.section { color: #bbb; margin-left: -30px; }
+#workspace #script .page p.synopsis { color: #bbb; margin-left: -20px; }
+
+#workspace #script .page span.italic { font-style: italic; }
+#workspace #script .page span.bold { font-weight: bold; }
+#workspace #script .page span.underline { text-decoration: underline; }
+</style>
+

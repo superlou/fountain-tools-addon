@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
+
+<div class="block">
+  <input type="text" id="file-name" value="<?= defaultFileName ?>" style="width: 250px;">
+</div>
+
+<div class="block">
+  <button class="action" id="create">Create</button><button id="cancel">Cancel</button>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function() {
+  $('#create').click(create);
+  $('#cancel').click(cancel);
+  
+  $('#text').html(driveApp.getFolders());
+});
+  
+function cancel() {
+  google.script.host.close();
+}
+
+function create() {
+  google.script.run.createPdf($('#file-name').val());
+  google.script.host.close();
+}
+</script>

@@ -1,0 +1,49 @@
+<?!= include('baseStyle.html') ?>
+
+<style>
+#workspace #script .page-break {
+  display: block;
+  page-break-before: always;
+}
+
+/* Based on http://filmmakeriq.com/wp-content/uploads/2013/06/screenplay_format_sm.png */
+/* Not working yet */
+/*html body { padding: 0px; margin: 0px; width: 100%; }
+
+#workspace #script .page h2 { text-align: left; margin-left: 6in; }
+#workspace #script .page h3 { margin-left: 1.5in; margin-right: 1in; }
+
+#workspace #script .page div.dialogue { margin-left: 2.5in; margin-right: 3in; }
+#workspace #script .page div.dialogue h4 { margin-left: 3.5in; }
+#workspace #script .page div.dialogue p.parenthetical { margin-left: 3in; margin-right: 3in; }
+#workspace #script .page div.dialogue p { margin-bottom: 0; margin-top: 0; }
+
+#workspace #script .page div.dual-dialogue { margin: 2em 0 0.9em 2%; auto; width: 95%; }
+#workspace #script .page div.dual-dialogue div.dialogue { display: inline-block; margin: 0; width: 45%; }
+#workspace #script .page div.dual-dialogue div.dialogue h4 { margin-top: 0;}
+#workspace #script .page div.dual-dialogue div.dialogue.right { float: right; }
+
+#workspace #script .page p { margin-left: 1.5in; margin-right: 1in; }
+#workspace #script .page p.centered { text-align: center; width: 92.5%; }
+
+#workspace #script .page p.section { color: #bbb; margin-left: -30px; }
+#workspace #script .page p.synopsis { color: #bbb; margin-left: -20px; }
+
+#workspace #script .page span.italic { font-style: italic; }
+#workspace #script .page span.bold { font-weight: bold; }
+#workspace #script .page span.underline { text-decoration: underline; }*/
+</style>
+
+<div id="workspace">
+  <div id="script">
+    <? if (titlePage) { ?>
+    <div class="title-page">
+      <?!= titlePage ?>
+    </div>
+    <div class="page-break"></div>
+    <? } ?>
+    <div class="page">
+      <?!= script ?>
+    </div>
+  </div>
+</div>

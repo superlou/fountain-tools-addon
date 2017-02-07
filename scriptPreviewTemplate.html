@@ -1,0 +1,27 @@
+<?!= include('baseStyle.html') ?>
+
+<style>
+#workspace {
+padding: 1em;
+}
+
+#workspace #script
+{
+font-size: 8pt;
+}
+
+#workspace #script .title-page h1 { margin-top: 15px; margin-bottom: 34px; text-align: center; width: 90.5%; line-height: 120%}
+</style>
+
+<div id="workspace">
+  <div id="script">
+    <? if (titlePage) { ?>
+    <div class="title-page">
+      <?!= titlePage ?>
+    </div>
+    <? } ?>
+    <div class="page">
+      <?!= script ?>
+    </div>
+  </div>
+</div>
